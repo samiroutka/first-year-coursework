@@ -2,31 +2,39 @@
 
 Курсовой проект: симуляция работы парковки для легковых и грузовых автомобилей.
 
-## Запуск backend
+## Запуск FastAPI
+
+Из корня проекта:
 
 ```powershell
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-Backend запускается на `http://127.0.0.1:8000`.
-
-Код backend находится в папке `backend`:
-
-- `app.py` создает FastAPI-приложение;
-- `routes.py` содержит API-эндпоинты;
-- `parking.py` хранит состояние и логику симуляции;
-- `models.py` содержит модели входных данных.
-
-## Запуск frontend
+Если ты уже находишься в папке `api`, запускай так:
 
 ```powershell
-cd my-app
+uvicorn app:app --reload
+```
+
+Сервер будет доступен на `http://127.0.0.1:8000`.
+
+## Структура API
+
+- `api/app.py` создает FastAPI-приложение;
+- `api/routes.py` содержит API-эндпоинты;
+- `api/parking.py` хранит состояние и логику симуляции;
+- `api/models.py` содержит модели входных данных.
+
+## Запуск React
+
+```powershell
+cd react
 npm install
 npm run dev
 ```
 
-Frontend запускается через Vite и обращается к FastAPI по адресу `http://127.0.0.1:8000`.
+Frontend обращается к FastAPI по адресу `http://127.0.0.1:8000`.
 
 ## CSV
 

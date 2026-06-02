@@ -1,8 +1,8 @@
 __pycache__/
 *.py[cod]
 
-my-app/node_modules/
-my-app/dist/
+react/node_modules/
+react/dist/
 
 .env
 .env.*

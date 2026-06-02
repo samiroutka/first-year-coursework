@@ -1,7 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .routes import router
+try:
+    from .routes import router
+except ImportError:
+    from routes import router
 
 
 def create_app():
