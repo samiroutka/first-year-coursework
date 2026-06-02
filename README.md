@@ -4,23 +4,23 @@
 
 ## Запуск FastAPI
 
-Из корня проекта:
+Перейди в папку backend-части:
 
 ```powershell
-pip install -r requirements.txt
-uvicorn main:app --reload
+cd fastapi
 ```
 
-Если ты уже находишься в папке `fastapi`, запускай так:
+Запусти сервер:
 
 ```powershell
-uvicorn app:app --reload
+uvicorn main:app --reload
 ```
 
 Сервер будет доступен на `http://127.0.0.1:8000`.
 
 ## Структура FastAPI
 
+- `fastapi/main.py` точка входа для запуска сервера;
 - `fastapi/app.py` создает FastAPI-приложение;
 - `fastapi/routes.py` содержит API-эндпоинты;
 - `fastapi/parking.py` хранит состояние и логику симуляции;
