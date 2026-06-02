@@ -24,7 +24,16 @@ uvicorn main:app --reload
 - `fastapi/app.py` создает FastAPI-приложение;
 - `fastapi/routes.py` содержит API-эндпоинты;
 - `fastapi/parking.py` хранит состояние и логику симуляции;
+- `fastapi/database.py` работает с SQLite;
 - `fastapi/models.py` содержит модели входных данных.
+
+SQLite-файл создается автоматически:
+
+```text
+fastapi/parking.db
+```
+
+В базе сохраняются настройки, текущее время, список машин и история событий.
 
 ## Запуск React
 

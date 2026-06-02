@@ -1,5 +1,6 @@
 __pycache__/
 *.py[cod]
+*.db
 
 react/node_modules/
 react/dist/
