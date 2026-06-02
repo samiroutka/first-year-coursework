@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+
+my-app/node_modules/
+my-app/dist/
+
+.env
+.env.*
+
+~$*.docx
