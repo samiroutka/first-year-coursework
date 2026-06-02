@@ -3,12 +3,8 @@ import io
 
 from fastapi import APIRouter, File, UploadFile
 
-try:
-    from .models import CarCreate, SettingsUpdate
-    from .parking import parking
-except ImportError:
-    from models import CarCreate, SettingsUpdate
-    from parking import parking
+from models import CarCreate, SettingsUpdate
+from parking import parking
 
 router = APIRouter()
 

@@ -11,7 +11,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-Если ты уже находишься в папке `api`, запускай так:
+Если ты уже находишься в папке `fastapi`, запускай так:
 
 ```powershell
 uvicorn app:app --reload
@@ -19,12 +19,12 @@ uvicorn app:app --reload
 
 Сервер будет доступен на `http://127.0.0.1:8000`.
 
-## Структура API
+## Структура FastAPI
 
-- `api/app.py` создает FastAPI-приложение;
-- `api/routes.py` содержит API-эндпоинты;
-- `api/parking.py` хранит состояние и логику симуляции;
-- `api/models.py` содержит модели входных данных.
+- `fastapi/app.py` создает FastAPI-приложение;
+- `fastapi/routes.py` содержит API-эндпоинты;
+- `fastapi/parking.py` хранит состояние и логику симуляции;
+- `fastapi/models.py` содержит модели входных данных.
 
 ## Запуск React
 
