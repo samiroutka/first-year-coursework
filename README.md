@@ -11,6 +11,13 @@ uvicorn main:app --reload
 
 Backend запускается на `http://127.0.0.1:8000`.
 
+Код backend находится в папке `backend`:
+
+- `app.py` создает FastAPI-приложение;
+- `routes.py` содержит API-эндпоинты;
+- `parking.py` хранит состояние и логику симуляции;
+- `models.py` содержит модели входных данных.
+
 ## Запуск frontend
 
 ```powershell
